@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="info" >
+    <div class="img-wrapper">
+      <img class="img" [src]='mission.links.mission_patch_small'>
+      <div class="img-placeholder"></div>
+    </div>
+    <h5 class="title">{{mission.mission_name}}#{{mission.flight_number}}</h5>
+    <ul class="list-formatting">
+    <li *ngFor="let missionId of mission.mission_id">{{missionId}}
+    </ul>
+    <div class="attrib-adjust"><b>Launch Year:</b>{{mission.launch_year}}</div>
+    <!-- <div class="attrib-adjust"><b>Successful Launch:</b>{{mission.launch_success}}</div> -->
+    <!-- <div class="attrib-adjust"><b>Successful Landing:</b>{{mission.land_success === undefined ? 'N/A' : mission.land_success}}</div> -->
+  </div>
+</div>

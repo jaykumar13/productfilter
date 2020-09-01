@@ -1,0 +1,21 @@
+<div class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+          <filters #filtersComponent [launchYearFilters]='launchYearFilters' [successfulLaunchFilters]='successfulLaunchFilters' [successfulLandingFilters]='successfulLandingFilters' (onFilterChange)='onFilterChange($event)'></filters>
+      </div>
+      <div class="col-9">
+        <div class="row">
+          <div class="col-12 product-container">
+            <space-mission [mission]="mission"
+            *ngFor="let mission of missions"
+            class="col-3 product-thumbnail"></space-mission>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row align-text">
+    Developed by Jay
+  </div>
+</div>
