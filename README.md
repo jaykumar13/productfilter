@@ -4,7 +4,7 @@
 
 Clone the project
 ```bash
-git clone https://github.com/jaykumar13/productfilter.git
+git clone https://github.com
 ```
 
 Install npm dependencies inside the project folder
@@ -28,9 +28,6 @@ Now open a new tab at **localhost:4500**.
 ### Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4500/`. The app will automatically reload if you change any of the source files.
 
-### server side render
-npm run build:ssr
-npm run serve:ssr for product serve. Navigate to `http://localhost:4800/`
 
 ### Build
 
