@@ -4,7 +4,7 @@
 
 Clone the project
 ```bash
-git clone https://github.com
+git clone https://github.com/jaykumar13/productfilter.git
 ```
 
 Install npm dependencies inside the project folder
@@ -20,18 +20,31 @@ npm install -g angular-cli
 
 Start the application
 ```bash
-ng serve
+ng serve or npm start
 ```
 
 Now open a new tab at **localhost:4500**.
 
+### Deploye Into server
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+configure node - express application in order to run build application.
+
 ### Development server
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4500/`. The app will automatically reload if you change any of the source files.
 
 
 ### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+### Build Server side Render
+
+`nvm run build:ssr` to build the project. The build artifacts will be stored in the `dist/` directory
+`npm run serve:ssr` to run server side application ie server side render.
+`server.ts` you can change port no 4000 to your desire port no to run the application.
 
 ### Running unit tests
 
